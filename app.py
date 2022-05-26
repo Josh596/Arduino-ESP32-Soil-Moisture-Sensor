@@ -31,7 +31,7 @@ class update_table_data(Resource):
 
         return True
 
-api.add_resource(update_table_data, '/update/')
+api.add_resource(update_table_data, '/update')
 
 # app.route('/update')
 # def update():
