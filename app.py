@@ -22,8 +22,7 @@ def index():
 
 class update_table_data(Resource):
     def post(self):
-        response = request.get_json()
-        value = response['value']
+        value = request.form['value']
         datetime_ = datetime.datetime.utcnow().strftime('%Y-%m-%d %H:%M:%S')
         data = {'datetime': str(datetime_), 'value':value}
         json_data = json.dumps(data)
